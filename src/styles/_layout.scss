@@ -1,0 +1,35 @@
+@import "variables";
+
+.App {
+  &__sidebar {
+    width: 60%;
+    max-width: 20rem;
+    height: 100vh;
+    background-color: $mainbg;
+    position: fixed;
+    border-right: 1px solid $light;
+    transform: translateX(-100%);
+    transition: all 0.25s ease-out;
+
+    &.active{
+      transform: translateX(0%);
+    }
+  }
+  
+  &__toggle {
+    position: absolute;
+    right: -4.2rem;
+    top: 1rem;
+    font-size: 2rem;
+    color: $accent;
+    border: 3px solid $light;
+    border-radius: 15px;
+    padding: 0.4rem;
+    padding-bottom: 0;
+  }
+
+  // &__content{
+  //   width: 84%;
+  //   margin-left: auto;
+  // }
+}

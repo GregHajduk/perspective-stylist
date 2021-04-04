@@ -1,0 +1,26 @@
+@import 'variables'; 
+@import 'home'; 
+@import 'layout'; 
+@import 'navbar'; 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cabin', sans-serif;
+    color:$text;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+img{
+    display: block;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
