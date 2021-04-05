@@ -8,19 +8,8 @@
     width: 100%;
     background: url("../assets/images/Living\ Room.jpg")center/cover;
 
-    &__hero{
-        flex-grow: 1;
-    }
     &__title{
-        font-size: 2rem;
-        padding: 1rem;
-        line-height: 0.8;
-        text-transform: uppercase;
-        letter-spacing: -3px;
-        color: $light;
-        background-color:$accent;
-        text-align: end;
-        margin-top: 5.2rem;
+        flex-grow: 1;
     }
     &__icons{
         background-color: $light;

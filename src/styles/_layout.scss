@@ -5,8 +5,11 @@
     width: 60%;
     max-width: 20rem;
     height: 100vh;
+    top: 0;
+    left: 0;
     background-color: $mainbg;
     position: fixed;
+    z-index: 100;
     border-right: 1px solid $light;
     transform: translateX(-100%);
     transition: all 0.25s ease-out;

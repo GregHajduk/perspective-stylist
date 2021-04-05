@@ -1,11 +1,8 @@
 import React from 'react'
+import Title from '../components/Title';
 
-function About() {
-    return (
-        <div>
-            <h1>My page1</h1>
-        </div>
-    )
+function Projects() {
+    return <Title title="projects" />;
 }
 
-export default About
+export default Projects

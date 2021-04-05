@@ -1,11 +1,8 @@
 import React from 'react'
+import Title from '../components/Title';
 
-function About() {
-    return (
-        <div>
-            <h1>My page2</h1>
-        </div>
-    )
+function Contact() {
+    return <Title title="contact" />;
 }
 
-export default About
+export default Contact

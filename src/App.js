@@ -3,11 +3,12 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Blogs from "./pages/Blogs";
+import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import {Route, Switch } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import BlogPost from "./components/BlogPost";
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
           <Route component={Home} path="/" exact />
           <Route component={About} path="/about" />
           <Route component={Projects} path="/projects" />
-          <Route component={Blogs} path="/blogs" />
+          <Route component={BlogPost} path="/post/:slug" />
+          <Route component={Blog} path="/blog" />
           <Route component={Contact} path="/contact" />
         </Switch>
       </div>

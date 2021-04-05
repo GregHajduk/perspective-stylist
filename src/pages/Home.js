@@ -7,12 +7,8 @@ import Title from '../components/Title';
 function Home() {
     return (
       <section className="home">
-        <header className="home__hero">
-          <div className="home__title">
-            <Title title="Beautifuly" />
-            <Title title="Designed" />
-            <Title title="Interiors" />
-          </div>
+        <header className="home__title">
+          <Title title="beautifuly designed interiors"/>
         </header>
         <IconContext.Provider
           value={{
