@@ -1,8 +1,15 @@
-import React from 'react'
-import Title from '../components/Title';
+import React from "react";
+import ContactForm from "../components/ContactForm";
+import PageMargin from "../components/PageMargin";
+import Title from "../components/Title";
 
 function Contact() {
-    return <Title title="contact" />;
+    return (
+        <PageMargin>
+        <Title title="contact" />
+        <ContactForm />
+        </PageMargin>
+    );
 }
 
-export default Contact
+export default Contact;

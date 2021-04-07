@@ -10,9 +10,10 @@
 
     &__title{
         flex-grow: 1;
+        margin-top: 5.2rem;
     }
     &__icons{
-        background-color: $light;
+        background-color: $mainbg;
         padding: 1rem;
         border-radius: 35px;
         align-self: flex-end;

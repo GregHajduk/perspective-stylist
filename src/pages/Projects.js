@@ -1,8 +1,11 @@
-import React from 'react'
-import Title from '../components/Title';
+import ListGrid from "../components/ListGrid";
 
 function Projects() {
-    return <Title title="projects" />;
+  return (
+    <>
+      <ListGrid title="projects" item="project" />
+    </>
+  );
 }
 
-export default Projects
+export default Projects;
