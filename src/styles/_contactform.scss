@@ -2,21 +2,26 @@
 
 .contact {
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 0 1rem;
   border: none;
   border-radius: 15px;
-  background-color: $light;
+  background-color: $mainbg;
   color: $text;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  &__title {
+    font-size: 2rem;
+    color: $dark;
+    margin-bottom: 1rem;
+    font-weight: 200;
+  }
   &__input {
     width: 100%;
     padding: 0.3rem 0.2rem;
     margin-bottom: 1.5rem;
-    background-color: $light;
+    background-color: $mainbg;
     font-size: 1.125rem;
     color: $text;
     border: none;
@@ -39,5 +44,15 @@
     margin-top: 2rem;
     text-transform: uppercase;
     font-weight: 700;
+  }
+  &__icons {
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
   }
 }

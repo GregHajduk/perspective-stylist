@@ -3,7 +3,9 @@ import ListGrid from "../components/ListGrid";
 function Projects() {
   return (
     <>
-      <ListGrid title="projects" item="project" />
+      <ListGrid 
+      title="projects" 
+      item="project" />
     </>
   );
 }

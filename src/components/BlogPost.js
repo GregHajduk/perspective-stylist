@@ -4,17 +4,19 @@ import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import PageMargin from "./PageMargin";
 import Loading from "./Loading";
+import Title from "../components/Title";
 
-function BlogPost() {
+function BlogPost({type}) {
   const [singlePost, setSinglePost] = useState(null);
   const { slug } = useParams();
 
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[slug.current == "${slug}"]{
+        `*[slug.current == "${slug}" 
+      ]{
             title,
-            desc,
+            description,
             _id,
             slug,
             author->{name},
@@ -36,11 +38,12 @@ function BlogPost() {
 
   return (
     <PageMargin>
+      <Title title="perspective stylist"/>
     <article className="post">
       <header className="post__header">
         <h2 className="post__title">{singlePost.title}</h2>
         <span className="post__author">by {singlePost.author.name}</span>
-        <p className="post__description">{singlePost.desc}</p>
+        <p className="post__description">{singlePost.description}</p>
         <div className="post__img"><img
           src={singlePost.mainImage.asset.url}
           alt={singlePost.mainImage.alt}

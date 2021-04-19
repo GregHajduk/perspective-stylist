@@ -8,6 +8,10 @@ export default {
       type: "string",
     },
     {
+      name: "description",
+      type: "text",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -33,8 +37,9 @@ export default {
       type: "image",
     },
     {
-      name: "description",
-      type: "text",
+      name: "body",
+      title: "Body",
+      type: "blockContent",
     },
   ],
 };

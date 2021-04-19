@@ -12,13 +12,11 @@
     align-items: center;
 
     &__profile {
-      width: 100%;
-      margin-top: 1rem;
+      width: 80%;
+      margin-top: 1.5rem;
 
       img {
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 1rem;
+        width: 100%;
       }
     }
     &__footer {
@@ -42,7 +40,7 @@
           left: 0;
           width: 0%;
           height: 100%;
-          background-color: rgba(255, 94, 94, 0.1);
+          background-color: rgba(94, 183, 255, 0.1);
           transition: 0.2s all ease-out;
         }
         &:hover::before {

@@ -3,7 +3,7 @@
 .App {
   &__sidebar {
     width: 60%;
-    max-width: 20rem;
+    max-width: 15rem;
     height: 100vh;
     top: 0;
     left: 0;
@@ -22,14 +22,26 @@
   &__toggle {
     position: absolute;
     right: -3rem;
-    top: 1.7rem;
+    top: 1.4rem;
     font-size: 2rem;
     color: $accent;
     padding-bottom: 0;
   }
 
-  // &__content{
-  //   width: 84%;
-  //   margin-left: auto;
-  // }
+
+}
+@media screen and (min-width: 62.5em){
+.App{
+    &__content{
+    width: calc(100% - 15rem);
+    margin-left: auto;
+  }
+  &__sidebar{
+    transform: translate(0);
+  }
+  &__toggle{
+    display: none;
+  }
+
+}
 }

@@ -1,0 +1,14 @@
+@import "variables";
+
+.icons {
+  background-color: $mainbg;
+  font-size: 2rem;
+  margin: 1rem 0;
+
+  & svg {
+    color: $accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

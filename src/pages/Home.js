@@ -1,34 +1,20 @@
 import { FaPhone, FaEnvelope } from "react-icons/fa";
-import { IconContext } from 'react-icons/lib';
-import { Link } from 'react-router-dom';
-import Title from '../components/Title';
-
+import Icons from "../components/Icons";
+import Title from "../components/Title";
 
 function Home() {
-    return (
-      <section className="home">
-        <header className="home__title">
-          <Title title="beautifuly designed interiors"/>
-        </header>
-        <IconContext.Provider
-          value={{
-            color: "#FF5E5E",
-            size: "2rem",
-            style: { margin: "0.8rem 0.5rem", },
-          }}
-        >
-          <div className="home__icons">
-            <Link to="/">
-              <FaPhone />
-            </Link>
-            <Link to="/">
-              <FaEnvelope />
-            </Link>
-          </div>
-        </IconContext.Provider>
-      </section>
-    );
+  return (
+    <section className="home">
+      <header className="home__header">
+        <h1 className="home__title">Beautifuly designed <span className="home__designed">interiors</span></h1>
+      </header>
+      <div className="home__icons">
+        <Icons name={<FaPhone />} to="#" />
+        <Icons name={<FaEnvelope />} to="#" />
+      </div>
+    </section>
+  );
 }
 
-export default Home
-                
+export default Home;
+
