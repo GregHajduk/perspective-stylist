@@ -1,7 +1,6 @@
 import React from "react";
 import emailjs from "emailjs";
-import { FaInstagram, FaFacebook, FaBehance } from "react-icons/fa";
-import Icons from "./Icons";
+
 
 export default function ContactForm() {
   function sendEmail(e) {
@@ -35,11 +34,6 @@ export default function ContactForm() {
           <input className="contact__btn" type="submit" value="Send" />
         </form>
       </article>
-      <div className="contact__icons">
-        <Icons name={<FaFacebook />} to="#" />
-        <Icons name={<FaBehance />} to="#" />
-        <Icons name={<FaInstagram />} to="#" />
-      </div>
     </>
   );
 }

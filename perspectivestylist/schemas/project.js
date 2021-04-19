@@ -8,6 +8,11 @@ export default {
       type: "string",
     },
     {
+      name: "date",
+      title: "Date",
+      type: "date",
+    },
+    {
       name: "description",
       type: "text",
     },
@@ -20,11 +25,7 @@ export default {
         maxLength: 96,
       },
     },
-    {
-      name: "date",
-      title: "Date",
-      type: "date",
-    },
+
     {
       name: "author",
       title: "Author",

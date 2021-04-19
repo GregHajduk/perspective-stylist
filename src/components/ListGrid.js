@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 import Title from "../components/Title.js";
 import PageMargin from "../components/PageMargin";
-import ContactForm from "./ContactForm.js";
 import Loading from "./Loading";
 
 function ListGrid({title,item}) {
@@ -59,7 +58,6 @@ function ListGrid({title,item}) {
             </article>
           ))}
       </main>
-      <ContactForm />
     </PageMargin>
   );
 }

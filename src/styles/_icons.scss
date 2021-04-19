@@ -2,8 +2,11 @@
 
 .icons {
   background-color: $mainbg;
+  padding: 1.5rem;
+  border-radius: 50%;
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 1rem;
+
 
   & svg {
     color: $accent;

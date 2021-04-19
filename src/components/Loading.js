@@ -4,7 +4,7 @@ import PageMargin from './PageMargin'
 function Loading() {
     return (
         <PageMargin>
-            <span style={{fontSize:"3rem"}}>Loading...</span>
+            <span style={{fontSize:"2rem"}}>Loading...</span>
         </PageMargin>
     )
 }

@@ -1,0 +1,30 @@
+.footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 4rem;
+&__details{
+    margin: 4rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+&__icons{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (min-width: 62.5em){
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__details{
+            width: 60%;
+            text-align: center;
+            justify-content: flex-end;
+            margin: unset;
+            height: 100%;
+        }
+    }
+}
